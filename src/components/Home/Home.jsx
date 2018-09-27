@@ -20,7 +20,9 @@ const particleOpt = {
 class Home extends Component {
   render() {
     return (
+      <section id="home-card">
       <Grid>
+        <Row className="show-grid text-center">
         <div className="card-inner card-started active" id="home-card">
 
 				<div id="particles-bg" className="slide">
@@ -47,7 +49,9 @@ class Home extends Component {
 					</div>
 				</div>
 			</div>
+      </Row>
       </Grid>
+      </section>
     );
   }
 }

@@ -25,14 +25,45 @@ class About extends Component {
           return (
             <div key={index}>
               <Grid>
-              <h2 className="pre-header">{page.title.rendered}</h2>
-              <div dangerouslySetInnerHTML={ {__html: page.content.rendered} } />
+                <div className="content inner-top">
+                <div className="title-bg">About</div>
+                <Row className="show-grid text-center service-items">
+                  <Col xs={12} sm={12} className="person-wrapper">
+                  <h2 className="pre-header">{page.title.rendered}</h2>
+                  <div dangerouslySetInnerHTML={ {__html: page.content.rendered} } />
+                  </Col>
+            <Col xs={12} sm={4} className="person-wrapper">
+              <div class="service-item card-box">
+                <div class="icon"><i class="fas fa-code"></i></div>
+              <Image src="assets/creartem-bw.png" circle className="profile-pic"/>
+              <div className="name">Frank</div>
+              <p>That's a crooked tree. Well send him to Washington. These little son of a guns hide in your brush and you just have to push them out.</p>
+              </div>
+            </Col>
+            <Col xs={12} sm={4} className="person-wrapper">
+              <div class="service-item card-box">
+                <div class="icon"><i class="fas fa-code"></i></div>
+              <Image src="assets/creartem-bw.png" circle className="profile-pic"/>
+              <div className="name">Vanessa</div>
+              <p>That's a crooked tree. Well send him to Washington. These little son of a guns hide in your brush and you just have to push them out.</p>
+              </div>
+            </Col>
+            <Col xs={12} sm={4} className="person-wrapper">
+              <div class="service-item card-box">
+                <div class="icon"><i class="fas fa-code"></i></div>
+              <Image src="assets/creartem-bw.png" circle className="profile-pic"/>
+              <div className="name">Riff</div>
+              <p>That's a crooked tree. Well send him to Washington. These little son of a guns hide in your brush and you just have to push them out.</p>
+              </div>
+            </Col>
+  </Row>
+</div>
               </Grid>
             </div>
           )
         })
         return (
-          <section>
+          <section id="about-page">
               {pages}
           </section>
         );

@@ -380,7 +380,6 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #262628;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -585,7 +584,7 @@
 
 @media (max-width: 1023px) {
 	.card-inner {
-		padding-left: 0;
+		padding-left: 64px;
 	}
 
 }
