@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import './styles/css/animate.css';
 import './styles/css/basic.css';
 import './styles/css/blogs.css';
