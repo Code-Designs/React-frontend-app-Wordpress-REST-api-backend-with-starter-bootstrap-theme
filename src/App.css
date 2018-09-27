@@ -21,8 +21,27 @@
 .App-intro {
   font-size: large;
 }
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background:url("/assets/bg.jpg") no-repeat !important;
+  background-size:cover;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+section {
+  padding:90px 0;
+  padding-left:64px !important;
+}
+.slide-part {
+  height:99vh;
+}
+.full-height {
+  height:100vh !important;
 }
