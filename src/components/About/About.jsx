@@ -4,20 +4,38 @@ import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import './About.css';
 
 class About extends Component {
+  constructor(){
+    super();
+    this.state = {
+      pages: []
+    }
+  }
+  componentDidMount() {
+    let pagesURL = "http://localhost/wpapi/wp-json/wp/v2/pages?slug=about embed";
+    fetch(pagesURL)
+    .then(response => response.json())
+    .then(response => {
+      this.setState({
+        pages: response
+      })
+    })
+  }
   render() {
-    return (
-      <section>
-      <Grid>
-        <Jumbotron>
-          <h2>Welcome to Creartem.nz</h2>
-          <p>This is a student run web design agency.</p>
-            <Link to="/">
-              <Button bsStyle="primary">Home</Button>
-            </Link>
-        </Jumbotron>
-      </Grid>
-      </section>
-    );
+    let pages = this.state.pages.map((page, index) => {
+          return (
+            <div key={index}>
+              <Grid>
+              <h2 className="pre-header">{page.title.rendered}</h2>
+              <div dangerouslySetInnerHTML={ {__html: page.content.rendered} } />
+              </Grid>
+            </div>
+          )
+        })
+        return (
+          <section>
+              {pages}
+          </section>
+        );
   }
 }
 
