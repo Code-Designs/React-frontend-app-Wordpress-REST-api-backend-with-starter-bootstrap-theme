@@ -1,9 +1,10 @@
 
 
 
-## Table of Contents
+## About App
 
-Creartem Website Development Process
+Creartem.nz Website Redesign - This Project is part of my course in the software and web development degree.
+This is a web application created from scratch using full-stack development technologies which include Reactjs, Nodejs, Redux, Wordpress Rest Api and bootstrap.
 
 # Environment & Backend Setup
 -	Setup local environment, Install Nodejs etc
