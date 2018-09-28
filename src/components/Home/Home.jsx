@@ -37,6 +37,7 @@ class Home extends Component {
 
 				<div className="centrize full-width full-height">
 					<div className="vertical-center">
+
             <Typist>
 						<div className="title"><Typist.Delay ms={800} /><span>CREARTEM</span> <Typist.Delay ms={800} />WEB AGENCY</div>
             <Typist.Delay ms={500} />

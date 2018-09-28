@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+.liststylecircle {
+  list-style: circle;
+}
 #root, main, #about-page {
   height:100%;
 }
@@ -1726,6 +1729,7 @@ textarea.error::-webkit-input-placeholder {
 	min-height: 236px;
 	text-align: left;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .service-items .service-item .icon {
